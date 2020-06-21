@@ -31,7 +31,7 @@ max-width: 100%;
 /* border: 1px solid grey; */
 font-family: 'Roboto Slab', serif;  
 }
-
+/*Landing page specific styles*/
 #homepage{
     background-image: url("https://images.unsplash.com/photo-1591601392196-dd6afe757012?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
     background-repeat: no-repeat;
@@ -42,7 +42,6 @@ font-family: 'Roboto Slab', serif;
 }
 
 #landing-image{
-
     width:100%;
     height:100%;
     display:flex;
@@ -60,7 +59,7 @@ main#indexHomePage{
     font-size: 6rem;     
     color: whitesmoke;
     display:flex;
-    width:70%;
+    width:80%;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -107,6 +106,17 @@ h1 #recipeLink:hover{
     
 }
 
+
+/* Recipe Page styles */
+#recipeImage{
+    background-image: url("https://images.unsplash.com/photo-1509358271058-acd22cc93898?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-repeat: no-repeat;
+    background-position:   center center ;   
+    background-size: cover;
+    background-color: #464646;
+    width:auto;
+    height: 30vh;
+}
 /*SOCIAL MEDIA STYLING */
 .fa {
     padding: 20px;
@@ -125,7 +135,7 @@ h1 #recipeLink:hover{
     background: none;
     color: white;
   }
-  
+ 
   .fa-twitter {
     background: none;
     color: white;
