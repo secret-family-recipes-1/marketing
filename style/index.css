@@ -285,6 +285,13 @@ main{
         font-weight: 900;
           
     }
+    h1 #login:hover:after{
+      content: 'Log In';
+      font-size:4.5rem;
+      text-shadow:5px 5px 10px dodgerblue ;
+      color: navajowhite;
+      font-weight: 900;
+  }
 
     #recipePage{
       width:auto;
