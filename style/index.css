@@ -56,7 +56,7 @@ main#indexHomePage{
 }
 
 #landing-image h1{
-    font-size: 6rem;     
+    font-size: 5rem;     
     color: whitesmoke;
     display:flex;
     width:80%;
@@ -166,7 +166,7 @@ main{
 }
 
 .imageRecipeContainer{
-  width:30%;
+  width:40%;
   height:auto;
   
 }
@@ -174,20 +174,17 @@ main{
   height:100%;
   width:100%;
   object-fit: cover;
-  object-position: center;
-  
+  object-position: center;  
 }
+
 .textcontainer{
   background-color:#E0E0E0;
-  width:70%;
+  width:60%;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
-  padding:0 2%;
-  
-
-  
+  padding:0 2%;  
 }
 
 .subtitles{
@@ -210,6 +207,10 @@ main{
   justify-content: center;
   align-items: center;
   background-color: #1F2935;
+}
+
+#lunchMeal{
+  width: 65%;
 }
 /*SOCIAL MEDIA STYLING */
 .fa {
@@ -253,3 +254,110 @@ main{
     color: white;
   }
   
+
+  @media screen and (max-width: 500px) {
+    /*Media Query for Home Page*/
+       #landingTags{
+         display:flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-around;
+         margin-top:15%;
+       }
+       
+       .mainTags{
+         font-size:3rem;
+         line-height: 5rem;
+       }
+
+       .footerContainer{
+         display:flex;
+         justify-content: center;
+         align-items: center;
+       }
+
+       h1 #aboutUs:hover:after{
+        content: 'About Us';
+        font-size: 4rem;
+        text-shadow:5px 5px 10px dodgerblue ;
+        color: navajowhite;
+        font-weight: 900;
+          
+    }
+
+    #recipePage{
+      width:auto;
+      height:100%;
+    }
+
+    #recipeImage{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #recipenavbar{
+      display:flex;
+      flex-direction: column;      
+      justify-content: space-evenly;
+      align-items: center; 
+      height: 30vh;    
+    }
+
+    #recipenavbar a{
+      font-size:2rem;      
+    }
+
+    .main-container{
+      display:flex;
+      flex-direction: column;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      background-color: #1F2935;
+    }
+
+    .recipecontainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height:auto;
+      width: 80%;
+    }
+
+    .subtitles{
+      font-size: 2rem;
+    }
+
+    .recipeText{
+      font-size:1rem;
+      
+    }
+
+    .imageRecipeContainer,#lunchMeal{
+      order: -1;
+      height:auto;
+      width:100%;
+    }
+
+    .subtitles{
+      align-self: center;
+      color:white;
+    }
+
+    .recipeText{
+      color:whitesmoke;
+      text-align: justify;
+    }
+
+    .textcontainer{
+      background-color:#1F2935;
+    }
+
+   
+
+   
+
+  }
