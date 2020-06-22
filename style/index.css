@@ -102,20 +102,114 @@ h1 #recipeLink:hover{
 .footerContainer{
     display:flex;
     justify-content: flex-end;
-    align-items: center;  
-    
+    align-items: center;      
 }
 
 
 /* Recipe Page styles */
+header{
+  width:100%;
+}
 #recipeImage{
-    background-image: url("https://images.unsplash.com/photo-1509358271058-acd22cc93898?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-    background-repeat: no-repeat;
-    background-position:   center center ;   
-    background-size: cover;
-    background-color: #464646;
-    width:auto;
+    background-image:url("./Resources/recipeHeader.jpg");
+    background-repeat: no-repeat;    
+    background-size:cover;      
+    background-color: #372A27;
+    width:100vw;
     height: 30vh;
+    padding: 10%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+
+#recipenavbar{
+  color:whitesmoke;
+  font-size: 2.5rem;
+  font-weight:500;
+  text-shadow:5px 5px 10px black; ;
+}
+
+#recipenavbar a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#recipePage{
+  background-color: #372A27;
+}
+
+main{
+  width:100%;  
+  
+}
+
+.main-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width:100%;
+  background-color: #1F2935;
+  
+}
+
+.recipecontainer{
+  display:flex;
+  width:70%;
+  height:30vh;
+  margin: 1%;
+  
+  
+}
+
+.imageRecipeContainer{
+  width:30%;
+  height:auto;
+  
+}
+.imageRecipeContainer img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  object-position: center;
+  
+}
+.textcontainer{
+  background-color:#E0E0E0;
+  width:70%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding:0 2%;
+  
+
+  
+}
+
+.subtitles{
+  font-size:3rem;
+  margin-bottom:1%;
+  font-weight: 600;
+  color:#414143;
+  
+}
+
+.recipeText{
+  font-size:1.5rem;
+  font-weight: 400;
+  color:#414143;
+  text-align:justify;
+}
+
+.recipeFooter{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2935;
 }
 /*SOCIAL MEDIA STYLING */
 .fa {
