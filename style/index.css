@@ -327,6 +327,31 @@ main{
   justify-content: center;
 }
 
+#famContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+
+}
+
+#famTitle{
+  font-size: 5rem;
+  color:whitesmoke;
+  text-shadow: 5px 5px black;
+}
+
+.nameHighlight{
+  font-weight: 700;
+  text-shadow: 2px 2px black;
+}
+h1 #aboutUsPage:hover:after{
+  content: 'Home';
+  font-size: 5.5rem;
+  text-shadow:5px 5px 10px dodgerblue ;
+  color: whitesmoke;
+  font-weight: 700;      
+}
 /*SOCIAL MEDIA STYLING */
 .fa {
     padding: 20px;
@@ -465,6 +490,13 @@ main{
       
     }
 
+    #titlecontainer{
+      width:100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .imageRecipeContainer,#lunchMeal{
       order: -1;
       height:auto;
@@ -489,6 +521,11 @@ main{
       width:100%;
       margin:3% 2%;
     }
+
+   
+
+
+ 
 
     /* Start of About us Page media Query*/
 
@@ -544,7 +581,11 @@ main{
     justify-content: center;
   }
 
-
+  #famTitle{
+    font-size: 3rem;
+    color:whitesmoke;
+    text-shadow: 5px 5px black;
+  }
 
 
   }
