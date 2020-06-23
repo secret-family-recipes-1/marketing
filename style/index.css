@@ -263,12 +263,19 @@ main{
          flex-direction: column;
          align-items: center;
          justify-content: space-around;
-         margin-top:15%;
+         margin-top:13%;
+       }
+
+       #landing-image h1 a{
+         font-weight: 900;
+         text-shadow: 5px 5px 10px black;
+         color:#E8E8E8;
        }
        
        .mainTags{
          font-size:3rem;
          line-height: 5rem;
+         
        }
 
        .footerContainer{
@@ -276,6 +283,8 @@ main{
          justify-content: center;
          align-items: center;
        }
+
+    
 
        h1 #aboutUs:hover:after{
         content: 'About Us';
@@ -366,6 +375,7 @@ main{
       background-color:#1F2935;
       height:50%;
       width:100%;
+      margin:3% 2%;
     }
 
    
