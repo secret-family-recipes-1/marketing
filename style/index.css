@@ -281,6 +281,7 @@ main{
 .paragraphContainer p{
   font-size:2rem;
   color:#C0C0C0;
+  text-align: justify;
   
 }
 .teamContainer{
