@@ -1,0 +1,591 @@
+/*color pallette
+dark> light
+#1D2323
+#5C848E
+#DECDC3
+#E0E0EC EOEOEC
+*/
+
+
+/*CSS RESET RIGHT HERE*/
+tml, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+font-size: 62.5%;  
+font: inherit;  
+vertical-align: baseline;  
+box-sizing:border-box ;
+max-width: 100%; 
+/* border: 1px solid grey; */
+/* font-family: 'Open Sans Condensed', sans-serif; */
+font-family: 'Noto Serif JP', serif;
+/* font-family: 'Roboto Slab', serif;   */
+/* font-family: 'Hind Siliguri', sans-serif; */
+}
+/*Landing page specific styles*/
+#homepage{
+    background-image: url("https://images.unsplash.com/photo-1591601392196-dd6afe757012?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+#landing-image{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+    padding:20px;
+}
+
+main#indexHomePage{
+    width:auto;
+    height:88vh;
+}
+
+#landing-image h1{
+    font-size: 5rem;     
+    color: whitesmoke;
+    display:flex;
+    width:80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#landing-image h1 a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+.unhide:hover{
+    font-size:0;
+}
+
+h1 #login:hover:after{
+    content: 'Log In';
+    font-size:6.5rem;
+    text-shadow:5px 5px 10px dodgerblue ;    
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+h1 #aboutUs:hover:after{
+    content: 'About Us';
+    font-size: 5.5rem;
+    text-shadow:5px 5px 10px dodgerblue ;
+    color: whitesmoke;
+    font-weight: 700;      
+}
+
+h1 #recipeLink:hover{
+    font-size:6.5rem;
+    text-shadow:5px 5px 10px dodgerblue;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+/* FOOTER STYLING*/
+.footerContainer{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;      
+}
+
+
+/* Recipe Page styles */
+header{
+  width:100%;
+}
+#recipeImage{
+    background-image:url("./Resources/recipeHeader.jpg");
+    background-repeat: no-repeat;    
+    background-size:cover;      
+    background-color: #372A27;
+    width:100vw;
+    height: 30vh;
+    padding: 10%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+
+#recipenavbar{
+  color:whitesmoke;
+  font-size: 2.5rem;
+  font-weight:500;
+  text-shadow:5px 5px 10px black; ;
+}
+
+#recipenavbar a{
+  text-decoration: none;
+  color: whitesmoke;
+  text-shadow: 2px 2px black;
+}
+
+#recipenavbar a:hover{
+  font-size:4rem;
+  text-shadow:5px 5px 10px dodgerblue;
+  color: whitesmoke;
+  font-weight: 700;
+
+}
+
+#recipePage{
+  background-color: #372A27;
+}
+
+main{
+  width:100%;  
+  
+}
+
+.main-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width:100%;
+  background-color: #1F2935;
+  
+}
+
+.recipecontainer{
+  display:flex;
+  width:70%;
+  height:30vh;
+  margin: 1%;
+  
+  
+}
+
+.imageRecipeContainer{
+  width:40%;
+  height:auto;
+  box-shadow: 5px 10px 18px #E0E0E0;
+  
+}
+.imageRecipeContainer img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  object-position: center;  
+}
+
+.textcontainer{
+  background-color:#E0E0E0;
+  width:60%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding:0 2%;  
+}
+
+.subtitles{
+  font-size:3rem;
+  margin-bottom:1%;
+  font-weight: 600;
+  color:#414143;
+  
+}
+
+.recipeText{
+  font-size:1.5rem;
+  font-weight: 400;
+  color:#414143;
+  text-align:justify;
+}
+
+.recipeFooter{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2935;
+}
+
+#lunchMeal{
+  width: 65%;
+}
+
+
+
+/*Start of About us styling */
+#aboutUsBody{
+  background-color: #1F2935;
+}
+#aboutUsHeaderImage{
+  background-image: url("https://images.unsplash.com/photo-1447078806655-40579c2520d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-y: 120%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  width:100%;
+  height:30vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutUsHeaderImage h1{
+  font-size: 5rem;     
+  color: whitesmoke;
+  display:flex;
+  width:60%;
+  align-items: center;
+  justify-content: space-evenly;
+  text-shadow: 2px 2px black;
+}
+
+#aboutUsHeaderImage h1 a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 100;
+}
+
+.paragraphContainer , .teamContainer, .aboutUsTextContainer{
+  background-color: #1F2935;
+}
+
+.aboutUsTextContainer{
+  display:flex;
+  width:100%;
+  justify-content: space-around;
+  align-items: center;
+  padding:7% 7%;
+}
+
+.paragraphContainer{
+  width:40%;  
+}
+
+.paragraphContainer p{
+  font-size:2rem;
+  color:#C0C0C0;
+  
+}
+.teamContainer{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+.individualContainer {
+  width: 12.5%;
+  margin:5%;
+  height:auto;    
+}
+
+.caption{
+  text-align: center;
+  color:#C0C0C0; 
+  
+}
+.caption h2{
+  font-size: 2rem;
+  text-shadow: 1px 1px;
+  color:whitesmoke;  
+}
+
+.caption figcaption{
+  font-size: 1.25rem;
+}
+
+#garyGenius{
+  color:#1F2935;
+}
+
+#aboutUsFooter{
+  background-color:#1F2935;
+}
+
+.aboutUsfooterContainer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#famContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+
+}
+
+#famTitle{
+  font-size: 5rem;
+  color:whitesmoke;
+  text-shadow: 5px 5px black;
+}
+
+.nameHighlight{
+  font-weight: 700;
+  text-shadow: 2px 2px black;
+}
+h1 #aboutUsPage:hover:after{
+  content: 'Home';
+  font-size: 5.5rem;
+  text-shadow:5px 5px 10px dodgerblue ;
+  color: whitesmoke;
+  font-weight: 700;      
+}
+/*SOCIAL MEDIA STYLING */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: none;
+    color: white;
+  }
+ 
+  .fa-twitter {
+    background: none;
+    color: white;
+  }
+  
+  .fa-google {
+    background: none;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: none;
+    color: white;
+  }
+  .fa-android {
+    background:none;
+    color: white;
+  }
+  .fa-instagram {
+    background: none;
+    color: white;
+  }
+  
+
+  @media screen and (max-width: 500px) {
+    /*Media Query for Home Page*/
+       #landingTags{
+         display:flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-around;
+         margin-top:13%;
+       }
+
+       #landing-image h1 a{
+         font-weight: 900;
+         text-shadow: 5px 5px 10px black;
+         color:#E8E8E8;
+       }
+       
+       .mainTags{
+         font-size:3rem;
+         line-height: 5rem;
+         
+       }
+
+       .footerContainer{
+         display:flex;
+         justify-content: center;
+         align-items: center;
+       }
+
+    
+
+       h1 #aboutUs:hover:after{
+        content: 'About Us';
+        font-size: 4rem;
+        text-shadow:5px 5px 10px dodgerblue ;        
+        font-weight: 900;
+          
+    }
+    h1 #login:hover:after{
+      content: 'Log In';
+      font-size:4.5rem;
+      text-shadow:5px 5px 10px dodgerblue ;      
+      font-weight: 900;
+  }
+
+    #recipePage{
+      width:auto;
+      height:100%;
+    }
+
+    #recipeImage{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #recipenavbar{
+      display:flex;
+      flex-direction: column;      
+      justify-content: space-evenly;
+      align-items: center; 
+      height: 30vh;    
+    }
+
+    #recipenavbar a{
+      font-size:2rem;      
+    }
+
+    .main-container{
+      display:flex;
+      flex-direction: column;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      background-color: #1F2935;
+    }
+
+    .recipecontainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height:auto;
+      width: 80%;
+    }
+
+    .subtitles{
+      font-size: 2rem;
+    }
+
+    .recipeText{
+      font-size:1rem;
+      
+    }
+
+    #titlecontainer{
+      width:100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .imageRecipeContainer,#lunchMeal{
+      order: -1;
+      height:auto;
+      width:100%;
+      box-shadow: 5px 10px 18px #E0E0E0;
+      height: 50%;
+    }
+
+    .subtitles{
+      align-self: center;
+      color:white;
+    }
+
+    .recipeText{
+      color:whitesmoke;
+      text-align: justify;
+    }
+
+    .textcontainer{
+      background-color:#1F2935;
+      height:50%;
+      width:100%;
+      margin:3% 2%;
+    }
+
+   
+
+
+ 
+
+    /* Start of About us Page media Query*/
+
+    h1 #login:hover:after{
+      content: 'Log In';
+      font-size:4rem;
+      text-shadow:5px 5px 10px dodgerblue ;    
+      font-weight: 700;
+      color: whitesmoke;
+  }
+  
+  h1 #aboutUs:hover:after{
+      content: 'About Us';
+      font-size: 3rem;
+      text-shadow:5px 5px 10px dodgerblue ;
+      color: whitesmoke;
+      font-weight: 700;      
+  }
+  
+  h1 #recipeLink:hover{
+      font-size:4rem;
+      text-shadow:5px 5px 10px dodgerblue;
+      color: whitesmoke;
+      font-weight: 700;
+  }
+
+  .aboutUsTextContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;    
+  }
+
+  .paragraphContainer{
+    width: 100%;
+    margin:5%
+  }
+  .paragraphContainer p{
+    font-size:1rem;
+    color:whitesmoke;
+    text-shadow: 1px 1px black;
+  }
+
+  .individualContainer{
+    width:50%;
+  }
+
+  .teamContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #famTitle{
+    font-size: 3rem;
+    color:whitesmoke;
+    text-shadow: 5px 5px black;
+  }
+
+
+  }
